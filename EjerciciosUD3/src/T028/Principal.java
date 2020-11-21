@@ -7,6 +7,8 @@ public class Principal {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("introduzca un númmero");
 		System.out.println(metodo(sc.nextInt()));
+		System.out.println("Introduzca otro número");
+		System.out.println(ejemplo(sc.nextInt()));
 		sc.close();
 	}
 	
@@ -17,7 +19,15 @@ public class Principal {
 			return 0;
 		}
 	}
+	//T028 siempre va a mostrar el 0 porque nunca va ser mayor igual y menor que 0 a la vez
+	//T029 Siempre mostrará el numero puesto que siempre va a ser igual menor o igual al cero.
+	private static int ejemplo(int x) {
+		if (((x>= 8)&&(x<=70))||(x>110))
+		return x;
+		else {
+			return 0;
+		}
+	}
+	//T030 >= <= && || >
 }
 
-//T028 siempre va a mostrar el 0 porque nunca va ser mayor igual y menor que 0 a la vez
-//T029 Siempre mostrará el numero puesto que siempre va a ser igual menor o igual al cero.
