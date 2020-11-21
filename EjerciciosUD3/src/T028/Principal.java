@@ -11,7 +11,7 @@ public class Principal {
 	}
 	
 	private static int metodo(int x) {
-		if ((x>=0) && (x<0)) {
+		if ((x>=0) || (x<0)) {
 			return x;
 		} else {
 			return 0;
@@ -19,4 +19,5 @@ public class Principal {
 	}
 }
 
-//T027 siempre va a mostrar el 0 porque nunca va ser mayor igual y menor que 0
+//T028 siempre va a mostrar el 0 porque nunca va ser mayor igual y menor que 0 a la vez
+//T029 Siempre mostrará el numero puesto que siempre va a ser igual menor o igual al cero.
