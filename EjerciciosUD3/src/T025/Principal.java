@@ -3,6 +3,7 @@ package T025;
 public class Principal {
 	public static void main(String[] args) {
 		a();
+		d();
 	}
 	
 	private static void a() {
@@ -17,6 +18,10 @@ public class Principal {
 	private static int c(int x) {
 		x--;
 		return x;
+	}
+	
+	private static void d() {
+		
 	}
 	
 }
